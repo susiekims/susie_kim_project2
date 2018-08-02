@@ -146,16 +146,42 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: "Catamaran", sans-serif; }
 
 h1, h2, h3, h4, h5 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1; }
 
-h1 {
+.section-heading {
+  font-size: 3rem; }
+
+.section-content {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center; }
+
+.subheading {
   font-size: 2.2rem; }
 
-h2 {
-  font-size: 5.3rem; }
+.subcontent {
+  font-size: 1.1rem; }
+
+.button {
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid black;
+  border-radius: 1.8rem;
+  padding: 3px 25px;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem; }
+
+.wrapper {
+  margin: 0px auto;
+  padding: 80px 0px;
+  text-align: center; }
 
 .header {
   width: 100%;
@@ -172,23 +198,70 @@ h2 {
   justify-content: space-between;
   max-width: 60%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
 
+.header__logo {
+  font-size: 2.3rem; }
+
 .nav__item {
-  display: inline-block; }
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding-left: 25px; }
 
 .nav__link {
   text-transform: uppercase; }
 
 .header__content {
-  width: 20%;
-  height: auto;
   position: absolute;
   right: 20%;
   top: 50vh;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+.header__title {
+  font-size: 6rem;
+  padding: 0; }
+
+.header__caption {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0; }
+
+.header__content * {
+  margin: 8px 0px; }
+
+.wrapper--welcome {
+  max-width: 50%; }
+  .wrapper--welcome .section-content {
+    margin: 50px 0px; }
+  .wrapper--welcome span {
+    color: #285d64; }
+
+.services {
+  background-color: #bec884; }
+  .services .container {
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .services .container__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 28%;
+    flex: 0 0 28%; }
+    .services .container__item * {
+      padding: 8px 0px; }
+  .services .icon {
+    font-size: 4rem; }
+
+.wrapper--services {
+  max-width: 60%; }

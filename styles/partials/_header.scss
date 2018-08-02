@@ -10,12 +10,19 @@
     justify-content: space-between;
     max-width: 60%;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 30px;
     align-items: center;
 } 
 
+.header__logo {
+    font-size: 2.3rem;
+}
+
 .nav__item {
     display: inline-block;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-left: 25px;
 }
 
 .nav__link {
@@ -23,10 +30,23 @@
 }
 
 .header__content {
-    width: 20%;
-    height: auto;
     position: absolute;
     right: 20%;
     top: 50vh;
     transform: translateY(-50%);
+}
+
+.header__title {
+    font-size: 6rem;
+    padding: 0;
+}
+
+.header__caption {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.header__content * {
+    margin: 8px 0px;
 }
