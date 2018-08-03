@@ -1,26 +1,27 @@
 .services {
     background-color:$olive-green;
 
-
-    .container {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .container__item {
-        flex: 0 0 28%;
-        * {
-            padding: 8px 0px;
-        }
-    }
-
-    .icon {
-        font-size: 4rem;
+    .section-heading {
+        flex: 0 0 100%;
     }
 }
 
 .wrapper--services {
     max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 400px;
+    text-align: center;
+}
+
+.services__item {
+    flex: 0 0 28%;
+    * {
+        padding: 8px 0px;
+    }
+}
+
+.icon {
+    font-size: 4rem;
 }

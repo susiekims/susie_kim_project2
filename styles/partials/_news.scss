@@ -1,0 +1,51 @@
+.news {
+    background-color: $light-grey;
+
+    .section-heading {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.wrapper--news {
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .news__item {
+        flex: 0 0 30%;
+        position: relative;
+    }
+}
+
+.news__subtitle {
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.news__button {
+    font-size: 1.4rem;
+    background: none;
+    border: none;
+    color: $dark-blue;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+}
+
+// .news__button::after {
+//     content: url("../assets/angle_double_right_solid.svg");
+//     display:block;
+//     width:22px;
+//     height:10px;
+//     margin:10px 5px 0 10px;
+// }
+
+.news__image {
+    margin-bottom: 10px;
+}
+
+.news__caption * {
+    padding: 5px 0;
+}

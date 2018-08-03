@@ -1,0 +1,33 @@
+.wrapper--testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    min-height: 600px;
+
+    .section-heading {
+        flex: 1 0 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.testimonials__image {
+    flex: 1 0 35%;
+    align-self: center;
+    height: auto;
+    width: 100%;
+}
+
+.testimonials__content {
+    align-self: center;
+    flex: 1 0 50%;
+    margin: 20px;
+    text-align: left;
+
+    .subheading {
+        margin-bottom: 30px;
+    }
+}
+
+
+
