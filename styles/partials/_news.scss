@@ -7,16 +7,17 @@
     }
 }
 
-.wrapper--news {
+.container--news {
     max-width: 60%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: left;
+}
 
-    .news__item {
-        flex: 0 0 30%;
-        position: relative;
-    }
+.news__item {
+    flex: 0 0 30%;
+    height: 100%;
 }
 
 .news__subtitle {
@@ -26,26 +27,35 @@
 
 .news__button {
     font-size: 1.4rem;
-    background: none;
-    border: none;
     color: $dark-blue;
     text-transform: uppercase;
-    position: absolute;
-    left: 0;
 }
 
-// .news__button::after {
-//     content: url("../assets/angle_double_right_solid.svg");
-//     display:block;
-//     width:22px;
-//     height:10px;
-//     margin:10px 5px 0 10px;
-// }
 
 .news__image {
     margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+.image-container {
+    position: relative;
 }
 
-.news__caption * {
-    padding: 5px 0;
+.image-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30% 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: opacity .5s;
 }

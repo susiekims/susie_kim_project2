@@ -2,22 +2,13 @@
     background: $dark-grey;
 }
 
-.wrapper--clients {
+.container--clients {
     max-width: 50%;
 }
 
 .clients__image {
     margin: 50px auto;
     position: relative;
-}
-
-.clients__image::before {
-    position: absolute;
-    content: '?';
-    color: black;
-    font-size: 20px;
-    left: -20px;
-    z-index: 50px;
 }
 
 .clients__name {

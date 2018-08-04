@@ -1,8 +1,9 @@
-.wrapper--testimonials {
+.container--testimonials {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
     min-height: 600px;
+    justify-content: center;
 
     .section-heading {
         flex: 1 0 100%;
@@ -12,18 +13,18 @@
 }
 
 .testimonials__image {
-    flex: 1 0 35%;
+    flex: 1 0 25%;
     align-self: center;
-    height: auto;
+    // height: auto;
+    max-width: 600px;
     width: 100%;
 }
 
 .testimonials__content {
     align-self: center;
-    flex: 1 0 50%;
+    flex: 1 2 50%;
     margin: 20px;
     text-align: left;
-
     .subheading {
         margin-bottom: 30px;
     }

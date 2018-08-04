@@ -1,10 +1,12 @@
-.gallery {
+.gallery__list {
     display: flex;
     flex-wrap: wrap;
 }
 
 .gallery__item {
     flex: 0 0 25%;
+    display: block;
+    position: relative;
 }
 
 .gallery__image {
@@ -12,6 +14,25 @@
     height: 100%;
 }
 
+.gallery figure {
+    height: 100%;
+    position: relative;
+}
+
+.gallery__item:hover .gallery__image__caption{
+    opacity: 1;
+}
+
 .gallery__image__caption {
-    display: none;
+    cursor: pointer;
+    padding: 25%;
+    text-align: center;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .5s;
 }
