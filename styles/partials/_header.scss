@@ -22,19 +22,56 @@
     display: inline-block;
     font-weight: 600;
     font-size: 1.4rem;
-    padding: 0 12px;
 }
 
 .nav__link {
+    padding: 0 12px;
+    display: block;
     text-transform: uppercase;
 }
 
+.nav__link:hover {
+    animation: bounce .5s
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .header__content {
+    opacity: 0;
     position: absolute;
     right: 20%;
     top: 50vh;
     transform: translateY(-50%);
+    animation-name: opening;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes opening {
+    0% {
+        top: 52vh;
+        opacity: 0;
+    }
+    100% {
+        top: 50vh;
+        opacity: 1;
+    }
+}
+
+
 
 .header__title {
     font-size: 6rem;
