@@ -1,7 +1,4 @@
 @media (max-width: 950px) {
-    .services__item {
-        flex-basis: 100%;
-    }
 
     .gallery__item {
         flex-basis: 50%;
@@ -16,31 +13,50 @@
         flex-basis: 100%;
     }
 
-    .shoots__nav__list {
-        display: flex;
-        justify-content: space-around;
+    .container--shoots {
+        flex-direction: column;
     }
 
     .shoots__nav {
         padding: 20px 0px 0px 0px;
     }
 
-    .shoots__nav__items a {
-        padding: 0 10px;
+    .shoots__nav__list {
+        margin-left: 0;
+        display: flex;
+        justify-content: space-around;
+
     }
 
-    .container--shoots {
-        flex-direction: column;
+    .shoots__nav__items a {
+        font-size: 1.2rem;
     }
+
 
     .shoots__nav__items {
         display: inline;
-        width: auto;
     }
 
 }
 
 @media (max-width: 770px) {
+
+    .header__content {
+        text-align: center;
+        right: 50%;
+        transform: translateX(50%);
+        animation-name: narrow-opening;
+    }
+
+    .services__item {
+        flex-basis: 100%;
+    }
+
+    .container {
+        padding: 50px 0px;
+        max-width: 80%;
+    }
+
     .news .section-heading {
         text-align: center;
     }
@@ -51,8 +67,64 @@
     }
 }
 
-@media (max-width: 450px) {
-    .gallery__item {
-        flex-basis: 100%;
+@media (max-width: 525px) {
+
+    .gallery__image {
+        flex-basis: 50%;
+    }
+
+    .gallery__image__caption {
+        padding: 10%;
+    }
+
+    .shoots__nav {
+        margin: 0;
+    }
+
+    .shoots__item {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    .footer__column {
+        flex: 0 0 100%;
+    }
+
+}
+
+@media (max-width: 470px) {
+    .container.header__nav {
+        max-width: 100%;
+        display: block;
+    }
+
+    .header .nav__item {
+        display: block;
+        width: 100%;
+        margin: 0;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+    }
+
+    .header .nav__link {
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header .nav {
+        display: none;
+    }
+
+    label#dropdown {
+        display: block;
+    }
+
+    .header__logo {
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 30px;
     }
 }

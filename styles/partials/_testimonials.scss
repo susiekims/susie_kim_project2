@@ -1,8 +1,6 @@
 .container--testimonials {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
-    min-height: 600px;
     justify-content: center;
 
     .section-heading {
@@ -15,7 +13,6 @@
 .testimonials__image {
     flex: 1 0 25%;
     align-self: center;
-    // height: auto;
     max-width: 600px;
     width: 100%;
 }

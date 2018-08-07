@@ -4,7 +4,7 @@
 
 .container--shoots {
     display: flex;
-    max-width: 60%;
+    width: 60%;
     flex-wrap: wrap;
 
     .subheading {
@@ -39,7 +39,7 @@
 
 .shoots__item {
     flex: 1 0 40%;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     position: relative;
 }
 
