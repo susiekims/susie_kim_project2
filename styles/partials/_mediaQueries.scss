@@ -1,5 +1,5 @@
 @media (max-width: 950px) {
-
+    
     .gallery__item {
         flex-basis: 50%;
     }
@@ -70,18 +70,14 @@
             height: 20vh;
             color: white;
             background: rgba(0, 0, 0, 0.5);
-            // background: red;
             border-bottom: 1px solid white;
             font-size: 20px;
-            // z-index: 999999;
-            
             a {
                 padding: calc(10vh - 20px) 0px;
             }
         }
-
         .nav__item:hover {
-            background: black;
+            background: rgba(0, 0, 0, 0.6);;
         }
     }
 }
@@ -107,7 +103,7 @@
     }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 600px) {
 
     .gallery__image {
         flex-basis: 50%;
@@ -137,6 +133,10 @@
 }
 
 @media (max-width: 470px) {
+
+    .section-content {
+        font-size: 1.2rem;
+    }
 
     .header__content {
         left: 30px;
