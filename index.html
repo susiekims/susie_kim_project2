@@ -13,9 +13,7 @@
     <header class="header">
         <nav class="container header__nav">
             <a href="index.html"><h1 class="header__logo">Photography</h1>
-            <label for="dropdown" id="dropdown"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" name="dropdown" id="dropdown">
-            <ul class="nav">
+            <ul class="nav nav--header">
                 <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Gallery</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
@@ -23,6 +21,7 @@
                 <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
             </ul>
         </nav>
+        <button class="header__button" id="dropdown-button"><i class="fas fa-bars"></i></button>
         <div class="header__content">
             <h2 class="header__title">Welcome</h2>
             <h4 class="header__caption">to my photography website</p>
@@ -30,14 +29,14 @@
         </div>
     </header>
     <section class="welcome">
-        <div class="container container--welcome">
+        <div class="container container--welcome scroll">
             <h3 class="section-heading">Welcome to <span>photography</span></h3>
             <p class="section-content">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate felis eu nunc moletie molestie vel tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis. </p>
             <button class="button">More</button>
         </div>
     </section>
     <section class="services">
-        <div class="container container--services">
+        <div class="container container--services scroll">
             <h3 class="section-heading">Services</h3>
             <div class="services__item">
                 <i class="fas fa-camera icon"></i>
@@ -57,7 +56,7 @@
         </div>
     </section>
     <section class="testimonials">
-        <div class="container container--testimonials">
+        <div class="container container--testimonials scroll">
             <h3 class="section-heading">Testimonials</h3>
             <img src="assets/image-2.jpeg" class="testimonials__image">
             <div class="testimonials__content">
@@ -66,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery scroll">
         <ul class="gallery__list">
             <li class="gallery__item">
                 <figure>
@@ -107,7 +106,7 @@
         </ul>
     </section>
     <section class="clients">
-        <div class="container container--clients">
+        <div class="container container--clients scroll">
             <h3 class="section-heading">Happy Clients</h3>
             <a href="#"><img src="assets/image-7.jpeg" alt="" class="clients__image"></a>
             <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -150,7 +149,7 @@
         </div>
     </section>
     <section class="questions">
-        <div class="container container--questions">
+        <div class="container container--questions scroll">
             <h3 class="section-heading">Ask a question</h3>
             <form action="" class="question-form">
                 <label for="question" class="question-form__label visuallyhidden">Your Message</label>
@@ -160,7 +159,7 @@
         </div>
     </section>
     <section class="shoots">
-        <div class="container container--shoots">
+        <div class="container container--shoots scroll">
             <nav class="shoots__nav">
                 <h3 class="subheading">Latest Shoots</h3>
                 <ul class="shoots__nav__list">
@@ -200,7 +199,7 @@
     </section>
     <footer>
         <section class="footer">
-            <div class="container container--footer">
+            <div class="container container--footer scroll">
                 <div class="footer__column footer__column--1">
                     <h4 class="subheading">Contact</h4>
                     <ul class="contact">
@@ -260,9 +259,17 @@
                 </nav>
             </div>
         </section>
-        <section class="small-footer">
+        <section class="small-footer scroll">
             <h6>2017 All rights resrved ©</h6>
         </section>
     </footer>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>    
 </body>
 </html>

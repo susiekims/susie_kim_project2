@@ -25,28 +25,68 @@
         margin-left: 0;
         display: flex;
         justify-content: space-around;
-
     }
-
-    .shoots__nav__items a {
-        font-size: 1.2rem;
-    }
-
 
     .shoots__nav__items {
         display: inline;
     }
 
+    .shoots__nav__items a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 895px)  {
+   
+    .header__button {
+        display: block;
+    }
+
+    .header__logo {
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 30px;
+    }
+
+    .container.header__nav {
+        max-width: 100%;
+    }
+
+    .header__nav {
+        display: block;
+    }
+
+    .nav--header {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 10000;
+        .nav__item {
+            display: block;
+            height: 20vh;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            // background: red;
+            border-bottom: 1px solid white;
+            font-size: 20px;
+            // z-index: 999999;
+            
+            a {
+                padding: calc(10vh - 20px) 0px;
+            }
+        }
+
+        .nav__item:hover {
+            background: black;
+        }
+    }
 }
 
 @media (max-width: 770px) {
-
-    .header__content {
-        text-align: center;
-        right: 50%;
-        transform: translateX(50%);
-        animation-name: narrow-opening;
-    }
 
     .services__item {
         flex-basis: 100%;
@@ -90,41 +130,15 @@
         flex: 0 0 100%;
     }
 
-}
-
-@media (max-width: 470px) {
-    .container.header__nav {
-        max-width: 100%;
-        display: block;
-    }
-
-    .header .nav__item {
-        display: block;
-        width: 100%;
-        margin: 0;
-        color: white;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 100;
-    }
-
-    .header .nav__link {
-        padding: 10px 0px;
-    }
-}
-
-@media (max-width: 500px) {
-    .header .nav {
+    .footer__nav {
         display: none;
     }
 
-    label#dropdown {
-        display: block;
-    }
+}
 
-    .header__logo {
-        display: block;
-        position: absolute;
-        top: 35px;
+@media (max-width: 470px) {
+
+    .header__content {
         left: 30px;
     }
 }

@@ -1,3 +1,14 @@
+.scroll {
+  opacity: 0;
+  transform: translate(0, 30px); 
+  transition: all 1s;
+}
+
+.scroll.visible { 
+  opacity: 1;
+  transform: translate(0, 0); 
+}
+
 html {
     font-size: 62.5%
 }
