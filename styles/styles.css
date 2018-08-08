@@ -786,7 +786,7 @@ h1, h2, h3, h4, h5 {
       display: block;
       height: 20vh;
       color: white;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.7);
       border-bottom: 1px solid white;
       font-size: 20px; }
       .nav--header .nav__item a {
