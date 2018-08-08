@@ -96,7 +96,12 @@
 }
 
 @media (max-width: 770px) {
-    
+
+    .gallery__item .gallery__image__caption,
+    .image-container .overlay {
+        opacity: .8;
+    }
+
     .container {
         padding: 50px 0px;
         max-width: 80%;
@@ -133,6 +138,10 @@
     .shoots__item {
         flex: 0 0 100%;
         margin: 0;
+    }
+
+    .shoots__image {
+        max-height: 250px;
     }
 
     .footer__column {

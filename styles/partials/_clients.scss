@@ -1,5 +1,5 @@
 .clients {
-    background: $dark-grey;
+    background: $light-grey;
 }
 
 .clients__image {
@@ -19,3 +19,7 @@
     margin: 0px auto;
     text-align: center;
 }
+
+.flickity-button {
+    background: none;
+  }

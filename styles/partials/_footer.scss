@@ -1,5 +1,6 @@
 .footer {
     padding-bottom: 0px;
+    position: relative;
 }
 
 .container--footer {
@@ -65,4 +66,21 @@
     background-repeat: no-repeat;
     background-position-x: 90%;
     background-position-y: 50%;
+}
+
+.social-icons__list {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.social-icons__icon {
+    padding: 20px 0px;
+}
+
+.social-icons__icon:hover {
+    opacity: 0.5;
 }
