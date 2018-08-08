@@ -555,24 +555,6 @@ h1, h2, h3, h4, h5 {
   -o-transition: opacity .5s;
   transition: opacity .5s; }
 
-.questions {
-  background-color: #f2b094; }
-
-.question-form__input {
-  border: none;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  background: none;
-  margin: 50px 0px;
-  padding: 5px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 600;
-  opacity: 1; }
-
 .shoots {
   background-color: #efefef; }
 
@@ -805,3 +787,21 @@ h1, h2, h3, h4, h5 {
     font-size: 1.2rem; }
   .header__content {
     left: 30px; } }
+
+.questions {
+  background-color: #f2b094; }
+
+.question-form__input {
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background: none;
+  margin: 50px 0px;
+  padding: 5px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 1; }
