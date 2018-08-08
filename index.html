@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+
+    CREDITS:
+    - carousel from flickity
+    - fade in effect from superhi:
+    https://www.superhi.com/blog/how-to-add-web-design-elements-that-fade-in-and-out-on-scroll
+
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:500,600,700|Lato:400,400i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <title>Photography</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Photography</title> 
 </head>
 <body>
     <header class="header">
@@ -21,7 +30,9 @@
                 <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
             </ul>
         </nav>
-        <button class="header__button" id="dropdown-button"><i class="fas fa-bars"></i></button>
+        <button class="header__button" id="dropdown-button">
+            <i class="fas fa-bars"></i>
+        </button>
         <div class="header__content">
             <h2 class="header__title">Welcome</h2>
             <h4 class="header__caption">to my photography website</p>
@@ -108,9 +119,23 @@
     <section class="clients">
         <div class="container container--clients scroll">
             <h3 class="section-heading">Happy Clients</h3>
-            <a href="#"><img src="assets/image-7.jpeg" alt="" class="clients__image"></a>
-            <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            <p class="clients__name">~ Mary Jane ~</p>
+            <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <a href="#"><img src="assets/image-7.jpeg" alt="" class="clients__image"></a>
+                    <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="clients__name">~ Mary Jane ~</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="#"><img src="assets/image-7.jpeg" alt="" class="clients__image"></a>
+                    <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="clients__name">~ Mary Jane ~</p>
+                </div>
+                <div class="carousel-cell">
+                    <a href="#"><img src="assets/image-7.jpeg" alt="" class="clients__image"></a>
+                    <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    <p class="clients__name">~ Mary Jane ~</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="news">
@@ -199,7 +224,7 @@
     </section>
     <footer>
         <section class="footer">
-            <div class="container container--footer scroll">
+            <div class="container--footer scroll">
                 <div class="footer__column footer__column--1">
                     <h4 class="subheading">Contact</h4>
                     <ul class="contact">
@@ -209,7 +234,7 @@
                         <li class="contact__info contact__info--your-address">
                             <form>
                                 <label for="email" class="visuallyhidden">enter your email</label>
-                                <input type="email" name="email" id="email" class="main-footer__email-form" placeholder="your email">
+                                <input type="email" name="email" id="email" class="footer__email-form" placeholder="your email">
                             </form>
                         </li>    
                     </ul>
@@ -264,12 +289,11 @@
             <h6>2017 All rights resrved ©</h6>
         </section>
     </footer>
-
-
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
   </body>    
 </body>

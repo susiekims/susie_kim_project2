@@ -79,3 +79,46 @@ h1, h2, h3, h4, h5 {
     padding: 80px 0px;
     text-align: center;
 }
+
+.nav__item {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.nav__link {
+    padding: 0 10px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.nav__item:hover {
+    text-decoration: underline;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .nav__link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: black;
+    height: 2px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .nav__link:hover:before, .nav__link:focus:before, .nav__link:active:before {
+    left: 0;
+    right: 0;
+  }

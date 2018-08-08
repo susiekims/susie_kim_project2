@@ -3,6 +3,7 @@
 $("#dropdown-button").click(function(e){
     e.preventDefault();
     $(".nav--header").toggle();
+    $("#dropdown-button").toggleClass("white");
 });
 
 // get the regular header back if window width is greater than 895px, hide it when it is less.
@@ -18,14 +19,13 @@ $( window ).resize(function() {
 $(document).on("scroll", function () {
     let pageTop = $(document).scrollTop()
     let pageBottom = pageTop + $(window).height()
-    let tags = $(".scroll")
-
-    for (let i = 0; i < tags.length; i++) {
-        let tag = tags[i]
-        if ($(tag).position().top < pageBottom) {
-            $(tag).addClass("visible")
+    let markers = $(".scroll")
+    for (let i = 0; i < markers.length; i++) {
+        let marker = markers[i]
+        if ($(marker).position().top < pageBottom) {
+            $(marker).addClass("visible")
         } else {
-            $(tag).removeClass("visible")
+            $(marker).removeClass("visible")
         }
     }
-  });
+});
