@@ -76,6 +76,11 @@
             background: rgba(0, 0, 0, 0.7);
             border-bottom: 1px solid white;
             font-size: 20px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
             a {
                 padding: calc(10vh - 20px) 0px;
             }
